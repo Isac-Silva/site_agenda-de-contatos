@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="/main.css">
+    <!-- icon page -->
+    <link rel="shortcut icon" href="/images/agenda-icon-2.png" type="image/x-icon">
+    <!-- font roboto mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/images/agenda-icon.png" alt="logo-agenda" />
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <main>
+            <p>Preencha os campos abaixo para adicionar um contato:</p>
+            <!-- begin form -->
+            <form id="form-contato">
+                <input type="text" id="nome-contato" required placeholder="Nome">
+                <input type="text" id="numero-contato" required placeholder="Número de Telefone">
+                <button type="submit">Cadastrar</button>
+            </form>
+            <!-- end form -->
+            <!-- begin table -->
+            <table cellspacing="0">
+                <!-- begin header table -->
+                <thead>
+                    <tr>
+                        <th>
+                            Nome
+                        </th>
+                        <th>
+                            Telefone
+                        </th>
+                    </tr>
+                </thead>
+                <!-- end header table -->
+                <!-- begin body table -->
+                <tbody>
+                </tbody>
+                <!-- end body table -->
+                <!-- begin footer table -->
+                <tfoot>
+                    <tr>
+                        <td>
+                            Total de Contatos
+                        </td>
+                        <td id="soma-total-contatos">
+                            ...
+                        </td>
+                    </tr>
+                </tfoot>
+                <!-- end footer table -->
+            </table>
+            <!-- end table -->
+        </main>
+    </div>
+    <!-- file .js -->
+    <script src="./main.js"></script>
+</body>
+</html>
